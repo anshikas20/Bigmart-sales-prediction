@@ -14,7 +14,7 @@ import seaborn as sns
 # In[2]:
 
 
-train=pd.read_csv(r'C:\Users\naveen chauhan\Desktop\mldata\mlp\Big Mart Sale Prediction\Train.csv')
+train=pd.read_csv(r'C:\Users\Anshika Singh\Desktop\mldata\mlp\Big Mart Sale Prediction\Train.csv')
 
 
 # In[3]:
@@ -32,7 +32,7 @@ train.shape
 # In[5]:
 
 
-test=pd.read_csv(r'C:\Users\naveen chauhan\Desktop\mldata\mlp\Big Mart Sale Prediction\Test.csv')
+test=pd.read_csv(r'C:\Users\Anshika Singh\Desktop\mldata\mlp\Big Mart Sale Prediction\Test.csv')
 
 
 # In[6]:
@@ -427,7 +427,7 @@ def modelfit(alg,dtrain,dtest,predictor,target,IDcol,filename):
     #now export on submission file 
     IDcol.append(target)
     submission=pd.DataFrame({x:dtest[x] for x in IDcol})
-    submission.to_csv("C:\\Users\\naveen chauhan\\Desktop\\mldata\\mlp\\Big Mart Sale Prediction\\"+filename,index=False)
+    submission.to_csv("C:\\Users\\Anshika Singh\\Desktop\\mldata\\mlp\\Big Mart Sale Prediction\\"+filename,index=False)
 
 
 # In[64]:
